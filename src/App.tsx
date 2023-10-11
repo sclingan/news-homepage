@@ -8,6 +8,7 @@ function App() {
 
   return (
     <main>
+      <h1 className='sr-only'>News Homepage</h1>
       <Header />
       <Article />
       <Aside />

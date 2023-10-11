@@ -5,7 +5,7 @@ function Aside() {
 
     return (
         <aside>
-            <h3>New</h3>
+            <h3 className='news-header'>New</h3>
 
             <div>Hydrogen VS Electric Cars
             Will hydrogen-fueled cars ever catch up to EVs?</div>
