@@ -43,21 +43,21 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "Inter";
-  src: url("../public/fonts/Inter-VariableFont_slnt,wght.ttf") format("ttf");
+  src: url("../public/fonts/Inter-VariableFont_slnt,wght.ttf");
   font-weight: 400 700 800;
   font-display: swap;
 }
 /* TODO:
    fix picture element, add breakpoints
-   fix variable fonts
    adjust thumbnail sizes
+   fix body background color, maybe cream?
 */
 body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 0.9375rem;
   padding-block: 2rem;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
 }
 
 main {
@@ -85,10 +85,38 @@ section {
 aside {
   background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
+  padding-inline: 1.5rem;
+}
+
+.div_aside {
+  border-bottom: 0.02rem solid hsl(236, 13%, 42%);
+  padding-block: 1rem;
 }
 
 .news-header {
   color: hsl(35, 77%, 62%);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+  padding-block: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  padding-block: 1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  padding-block: 0.5rem;
+}
+
+p {
+  color: hsl(233, 8%, 79%);
+  padding-bottom: 1rem;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -106,6 +134,11 @@ button {
   background-color: hsl(5, 85%, 63%);
   border: none;
   color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  margin-top: 0.5rem;
 }
 
 @media (min-width: 50rem) {

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('../public/fonts/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
+    src: url('../public/fonts/Inter-VariableFont_slnt\,wght.ttf');
     font-weight: 400 700 800;
     font-display: swap;
 }
@@ -21,8 +21,8 @@ $font-family: 'Inter';
 
 /* TODO:
    fix picture element, add breakpoints
-   fix variable fonts
    adjust thumbnail sizes
+   fix body background color, maybe cream?
 */
 
 body {
@@ -30,7 +30,7 @@ body {
     font-weight: $fw-400;
     font-size: $font-size;
     padding-block: 2rem;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
 }
 
 main {
@@ -58,6 +58,12 @@ section {
 aside {
     background-color: $neutral-dark-blue;
     color: $neutral-white;
+    padding-inline: 1.5rem;
+}
+
+.div_aside {
+    border-bottom: 0.02rem solid $neutral-dark-gray-blue;
+    padding-block: 1rem;
 }
 
 .news-header {
@@ -65,6 +71,28 @@ aside {
 }
 
 article {
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: $fw-800;
+    line-height: 2.5rem;
+    padding-block: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    padding-block: 1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    padding-block: 0.5rem;
+}
+
+p {
+    color: $neutral-gray-blue;
+    padding-bottom: 1rem;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -81,6 +109,11 @@ article {
     background-color: $primary-red;
     border: none;
     color: $neutral-white;
+    font-weight: $fw-700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding: 0.8rem 2rem;
+    margin-top: 0.5rem;
   }
 
 @media(min-width: 50rem) {
