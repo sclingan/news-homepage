@@ -51,6 +51,7 @@ p, h1, h2, h3, h4, h5, h6 {
    fix picture element, add breakpoints
    adjust thumbnail sizes
    fix body background color, maybe cream?
+   fix section spacing on info divs
 */
 body {
   font-family: "Inter";
@@ -78,8 +79,24 @@ section {
   grid-template-columns: auto;
 }
 
+.section_heading {
+  color: hsl(233, 8%, 79%);
+  padding-top: 0.6rem;
+}
+
+.section_sub_heading {
+  padding-block: 0;
+}
+
+.section_div {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 .thumbnail {
-  max-width: 40%;
+  padding-inline: 1rem;
+  padding-left: 0;
+  padding-block: 1rem;
 }
 
 aside {

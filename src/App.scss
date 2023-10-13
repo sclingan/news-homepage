@@ -23,6 +23,7 @@ $font-family: 'Inter';
    fix picture element, add breakpoints
    adjust thumbnail sizes
    fix body background color, maybe cream?
+   fix section spacing on info divs
 */
 
 body {
@@ -51,8 +52,25 @@ section {
     grid-template-columns: auto;
 }
 
+.section_heading {
+    color: $neutral-gray-blue;
+    padding-top: 0.6rem;
+}
+
+.section_sub_heading {
+    padding-block: 0;
+}
+
+.section_div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .thumbnail {
-    max-width: 40%;
+    // max-width: 50%;
+    padding-inline: 1rem;
+    padding-left: 0;
+    padding-block: 1rem;
 }
 
 aside {

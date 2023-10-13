@@ -7,27 +7,30 @@ function Section() {
 
     return (
         <section>
-            <div>
-                <p>
+            <div className='section_div'>
                 <img className='thumbnail' src={retro} alt=''></img>
-                01
-                Reviving Retro PCs
-                What happens when old PCs are given modern upgrades?</p>
+                <div>
+                  <h3 className='section_heading'>01</h3>
+                  <h4 className='section_sub_heading'>Reviving Retro PCs</h4>
+                  <p>What happens when old PCs are given modern upgrades?</p>
                 </div>
-            <div>
-                <p>
+            </div>
+            <div className='section_div'>
                 <img className='thumbnail' src={laptop} alt=''></img>
-                02
-                Top 10 Laptops of 2022
-                Our best picks for various needs and budgets.</p>
+                <div>
+                  <h3 className='section_heading'>02</h3>
+                  <h4 className='section_sub_heading'>Top 10 Laptops of 2022</h4>
+                  <p>Our best picks for various needs and budgets.</p>
                 </div>
-            <div>
-                <p>
+            </div>
+            <div className='section_div'>
                 <img className='thumbnail' src={gaming} alt=''></img>
-                03
-                The Growth of Gaming
-                How the pandemic has sparked fresh opportunities.</p>
+                <div>
+                  <h3 className='section_heading'>03</h3>
+                  <h4 className='section_sub_heading'>The Growth of Gaming</h4>
+                  <p>How the pandemic has sparked fresh opportunities.</p>
                 </div>
+            </div>
   
         </section>
     )
