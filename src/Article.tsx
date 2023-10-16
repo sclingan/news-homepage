@@ -7,9 +7,8 @@ function Article() {
     return (
         <article>
             <picture>
-                <source srcSet={web3} media=''></source>
-                <source srcSet={web3Desktop} media=''></source>
-                <img src={web3} alt=''></img>
+                <source srcSet={web3Desktop} media='(min-width: 50rem)'></source>
+                <img src={web3} alt='colorful blocks, pegs and triangles'></img>
             </picture>
              <h2>The Bright Future of Web 3.0?</h2>
 

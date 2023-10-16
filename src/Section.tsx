@@ -8,7 +8,7 @@ function Section() {
     return (
         <section>
             <div className='section_div'>
-                <img className='thumbnail' src={retro} alt=''></img>
+                <img className='thumbnail' src={retro} alt='old style computers, gameboy and cassette tapes'></img>
                 <div>
                   <h3 className='section_heading'>01</h3>
                   <h4 className='section_sub_heading'>Reviving Retro PCs</h4>
@@ -16,7 +16,7 @@ function Section() {
                 </div>
             </div>
             <div className='section_div'>
-                <img className='thumbnail' src={laptop} alt=''></img>
+                <img className='thumbnail' src={laptop} alt='black and glowing red keyboard'></img>
                 <div>
                   <h3 className='section_heading'>02</h3>
                   <h4 className='section_sub_heading'>Top 10 Laptops of 2022</h4>
@@ -24,7 +24,7 @@ function Section() {
                 </div>
             </div>
             <div className='section_div'>
-                <img className='thumbnail' src={gaming} alt=''></img>
+                <img className='thumbnail' src={gaming} alt='video game controller floating above an open hand'></img>
                 <div>
                   <h3 className='section_heading'>03</h3>
                   <h4 className='section_sub_heading'>The Growth of Gaming</h4>

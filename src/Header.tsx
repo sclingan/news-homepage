@@ -4,13 +4,13 @@ function Header() {
 
     return (
         <header>
-            <img src={logo} alt=""></img>
+            <img src={logo} alt="a W logo"></img>
             <nav>
-            Home
-            New
-            Popular
-            Trending
-            Categories
+              <a href="">Home</a>
+              <a href="">New</a>
+              <a href="">Popular</a>
+              <a href="">Trending</a>
+              <a href="">Categories</a>
             </nav>
         </header>
     )
