@@ -74,6 +74,10 @@ header {
   grid-template-columns: auto auto;
 }
 
+nav {
+  grid-column: 2/2;
+}
+
 section {
   display: grid;
   grid-template-columns: auto;
@@ -164,7 +168,6 @@ button {
 
 a {
   text-decoration: none;
-  padding-left: 2rem;
   color: hsl(240, 100%, 5%);
 }
 
