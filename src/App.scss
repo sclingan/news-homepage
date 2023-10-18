@@ -45,10 +45,15 @@ main {
 header {
     display: grid;
     grid-template-columns: auto auto;
+    align-items: center;
 }
 
 nav {
     grid-column: 2/2;
+}
+
+.menu-icon {
+    justify-self: end;
 }
 
 section {
@@ -145,6 +150,15 @@ p {
     text-decoration: none;
     // padding-left: 2rem;
     color: $neutral-dark-blue;
+  }
+
+  .sr-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    width: 1px;
   }
 
 @media(min-width: 50rem) {

@@ -1,11 +1,13 @@
 import logo from '../public/images/logo.svg';
+import iconMenu from '../public/images/icon-menu.svg';
 
 function Header() {
 
     return (
         <header>
             <img src={logo} alt="a W logo"></img>
-            <nav>
+            <img src={iconMenu} className='menu-icon' alt='hamburger menu'></img>
+            <nav className='sr-hidden'>
               <a href="">Home</a>
               <a href="">New</a>
               <a href="">Popular</a>
