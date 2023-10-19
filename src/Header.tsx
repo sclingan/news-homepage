@@ -7,7 +7,7 @@ function Header() {
         <header>
             <img src={logo} alt="a W logo"></img>
             <img src={iconMenu} className='menu-icon' alt='hamburger menu'></img>
-            <nav className='sr-hidden'>
+            <nav>
               <a href="">Home</a>
               <a href="">New</a>
               <a href="">Popular</a>
