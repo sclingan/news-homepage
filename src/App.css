@@ -48,10 +48,9 @@ p, h1, h2, h3, h4, h5, h6 {
   font-display: swap;
 }
 /* TODO:
-   adjust thumbnail sizes
-   fix section spacing on info divs
-   fix aside positioning
-   fix nav position
+   adjust thumbnail sizes****
+   add mobile menu
+   add links to hover states
 */
 body {
   font-family: "Inter";
@@ -96,6 +95,11 @@ section {
 
 .section_sub_heading {
   padding-block: 0;
+  cursor: pointer;
+}
+
+.section_sub_heading:hover {
+  color: hsl(5, 85%, 63%);
 }
 
 .section_div {
@@ -107,6 +111,10 @@ section {
   padding-inline: 1rem;
   padding-left: 0;
   padding-block: 1rem;
+}
+
+.gaming {
+  max-width: 110%;
 }
 
 aside {
@@ -148,6 +156,11 @@ h3 {
 h4 {
   font-size: 1.2rem;
   padding-block: 0.5rem;
+  cursor: pointer;
+}
+
+h4:hover {
+  color: hsl(35, 77%, 62%);
 }
 
 p {
@@ -175,11 +188,20 @@ button {
   text-transform: uppercase;
   padding: 0.8rem 2rem;
   margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(240, 100%, 5%);
 }
 
 a {
   text-decoration: none;
   color: hsl(240, 100%, 5%);
+}
+
+a:hover {
+  color: hsl(5, 85%, 63%);
 }
 
 @media (min-width: 50rem) {

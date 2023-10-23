@@ -20,10 +20,9 @@ $fw-800: 800;
 $font-family: 'Inter';
 
 /* TODO:
-   adjust thumbnail sizes
-   fix section spacing on info divs
-   fix aside positioning
-   fix nav position
+   adjust thumbnail sizes****
+   add mobile menu
+   add links to hover states
 */
 
 body {
@@ -69,6 +68,11 @@ section {
 
 .section_sub_heading {
     padding-block: 0;
+    cursor: pointer;
+}
+
+.section_sub_heading:hover {
+    color: $primary-red;
 }
 
 .section_div {
@@ -80,6 +84,10 @@ section {
     padding-inline: 1rem;
     padding-left: 0;
     padding-block: 1rem;
+}
+
+.gaming {
+    max-width: 110%;
 }
 
 aside {
@@ -121,6 +129,11 @@ h3 {
 h4 {
     font-size: 1.2rem;
     padding-block: 0.5rem;
+    cursor: pointer;
+}
+
+h4:hover {
+    color: $primary-orange;
 }
 
 p {
@@ -147,12 +160,21 @@ p {
     text-transform: uppercase;
     padding: 0.8rem 2rem;
     margin-top: 0.5rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: $neutral-dark-blue;
   }
 
   a {
     text-decoration: none;
     // padding-left: 2rem;
     color: $neutral-dark-blue;
+  }
+
+  a:hover {
+    color: $primary-red;
   }
 
 @media(min-width: 50rem) {

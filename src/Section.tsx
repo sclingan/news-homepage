@@ -24,7 +24,7 @@ function Section() {
                 </div>
             </div>
             <div className='section_div'>
-                <img className='thumbnail' src={gaming} alt='video game controller floating above an open hand'></img>
+                <img className='thumbnail gaming' src={gaming} alt='video game controller floating above an open hand'></img>
                 <div>
                   <h3 className='section_heading'>03</h3>
                   <h4 className='section_sub_heading'>The Growth of Gaming</h4>
