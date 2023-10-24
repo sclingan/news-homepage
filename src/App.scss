@@ -45,15 +45,33 @@ header {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+    position: relative;
 }
 
 nav {
     grid-column: 2/2;
-    display: none;
+    position: fixed;
+    top: -2rem;
+    right: 10rem;
+    // display: none;
+}
+
+ul {
+    list-style-type: none;
+    background-color: $neutral-white;
+    min-width: 260%;
+    min-height: 50rem;
+    padding-top: 8rem;
+    padding-left: 1rem;
+}
+
+li {
+    padding-block: 1rem;
 }
 
 .menu-icon {
     justify-self: end;
+    cursor: pointer;
 }
 
 section {

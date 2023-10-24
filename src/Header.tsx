@@ -8,11 +8,13 @@ function Header() {
             <img src={logo} alt="a W logo"></img>
             <img src={iconMenu} className='menu-icon' alt='hamburger menu'></img>
             <nav>
-              <a href="">Home</a>
-              <a href="">New</a>
-              <a href="">Popular</a>
-              <a href="">Trending</a>
-              <a href="">Categories</a>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Popular</a></li>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Categories</a></li>
+              </ul>
             </nav>
         </header>
     )
