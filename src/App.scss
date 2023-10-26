@@ -41,6 +41,11 @@ main {
     gap: 2rem;
 }
 
+.main-dark {
+    // mix-blend-mode: darken;
+    // filter: brightness(); 
+}
+
 header {
     display: grid;
     grid-template-columns: auto auto;
@@ -49,20 +54,26 @@ header {
 }
 
 nav {
-    grid-column: 2/2;
     position: fixed;
-    top: -2rem;
-    right: 10rem;
+    top: 0;
+    right: 0;
+    min-width: 50%;
+    min-height: 40rem;
     // display: none;
+}
+
+.icon-close {
+    position: fixed;
+    top: 2.5rem;
+    right: 1rem;
 }
 
 ul {
     list-style-type: none;
     background-color: $neutral-white;
-    min-width: 260%;
-    min-height: 50rem;
-    padding-top: 8rem;
     padding-left: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
 }
 
 li {
