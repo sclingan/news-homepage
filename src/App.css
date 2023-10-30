@@ -87,6 +87,9 @@ nav {
   position: fixed;
   top: 2.5rem;
   right: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 ul {
@@ -202,7 +205,7 @@ p {
   width: 1px;
 }
 
-button {
+.button-more {
   background-color: hsl(5, 85%, 63%);
   border: none;
   color: hsl(36, 100%, 99%);
@@ -214,7 +217,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button-more:hover {
   background-color: hsl(240, 100%, 5%);
 }
 
@@ -225,6 +228,10 @@ a {
 
 a:hover {
   color: hsl(5, 85%, 63%);
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 50rem) {

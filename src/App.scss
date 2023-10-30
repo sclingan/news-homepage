@@ -42,8 +42,8 @@ main {
 }
 
 .main-dark {
-    // mix-blend-mode: darken;
-    // filter: brightness(); 
+    // filter: brightness(30%); 
+    // background-color: grey;
 }
 
 header {
@@ -66,6 +66,9 @@ nav {
     position: fixed;
     top: 2.5rem;
     right: 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 ul {
@@ -180,7 +183,7 @@ p {
     width: 1px;
   }
 
-  button {
+  .button-more {
     background-color: $primary-red;
     border: none;
     color: $neutral-white;
@@ -192,7 +195,7 @@ p {
     cursor: pointer;
   }
 
-  button:hover {
+  .button-more:hover {
     background-color: $neutral-dark-blue;
   }
 
@@ -204,6 +207,10 @@ p {
 
   a:hover {
     color: $primary-red;
+  }
+
+  .hidden {
+    display: none;
   }
 
 @media(min-width: 50rem) {
