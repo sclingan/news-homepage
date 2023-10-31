@@ -59,7 +59,10 @@ nav {
     right: 0;
     min-width: 50%;
     min-height: 40rem;
-    // display: none;
+}
+
+.nav-hidden {
+    display: none;
 }
 
 .icon-close {
@@ -84,6 +87,8 @@ li {
 }
 
 .menu-icon {
+    border: none;
+    background-color: transparent;
     justify-self: end;
     cursor: pointer;
 }
@@ -239,9 +244,18 @@ p {
         display: none;
     }
 
-    nav {
-        display: flex;
-        gap: 5rem;
-        justify-content: end;
+    .nav-hidden {
+        display: inline;
     }
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        padding-top: 2rem;
+        justify-content: end;
+        padding-right: 2rem;
+        padding-bottom: 0;
+    }
+
+ 
 }

@@ -83,6 +83,10 @@ nav {
   min-height: 40rem;
 }
 
+.nav-hidden {
+  display: none;
+}
+
 .icon-close {
   position: fixed;
   top: 2.5rem;
@@ -105,6 +109,8 @@ li {
 }
 
 .menu-icon {
+  border: none;
+  background-color: transparent;
   justify-self: end;
   cursor: pointer;
 }
@@ -254,9 +260,15 @@ a:hover {
   .menu-icon {
     display: none;
   }
-  nav {
+  .nav-hidden {
+    display: inline;
+  }
+  ul {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
+    padding-top: 2rem;
     justify-content: end;
+    padding-right: 2rem;
+    padding-bottom: 0;
   }
 }/*# sourceMappingURL=App.css.map */
