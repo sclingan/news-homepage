@@ -26,7 +26,7 @@ function Header() {
             <img src={logo} alt="a W logo"></img>
             <button className='menu-icon' id='icon-open' onClick={open}><img src={iconMenu} className='menu-icon' alt='hamburger menu'></img></button>
             <nav id='nav' className='nav-hidden'>
-              <button className='hidden' id='icon-close' onClick={close}><img src={iconClose} alt=''></img></button>
+              <button className='hidden' id='icon-close' onClick={close}><img src={iconClose} alt='menu-close'></img></button>
               <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">New</a></li>
