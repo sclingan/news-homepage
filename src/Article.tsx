@@ -5,7 +5,7 @@ import web3Desktop from '../public/images/image-web-3-desktop.jpg';
 function Article() {
 
     return (
-        <article>
+        <article id='article'>
             <picture>
                 <source srcSet={web3Desktop} media='(min-width: 50rem)'></source>
                 <img src={web3} alt='colorful blocks, pegs and triangles'></img>

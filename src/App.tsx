@@ -7,7 +7,7 @@ import Section from '../src/Section';
 function App() {
 
   return (
-    <main className='main-dark'>
+    <main id='main'>
       <h1 className='sr-only'>News Homepage</h1>
       <Header />
       <Article />

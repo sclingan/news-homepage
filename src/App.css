@@ -49,6 +49,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /* TODO:
    add links to hover states
+   fix menu background
 */
 body {
   font-family: "Inter";
@@ -56,6 +57,11 @@ body {
   font-size: 0.9375rem;
   padding-block: 2rem;
   padding-inline: 1rem;
+  background-color: hsl(36, 100%, 99%);
+}
+
+.body-dark {
+  background-color: hsl(0, 0%, 50%);
 }
 
 main {
@@ -64,6 +70,14 @@ main {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+.main-dark {
+  background-color: hsl(0, 0%, 50%);
+}
+
+.article-dark {
+  filter: brightness(20%);
 }
 
 header {
@@ -79,6 +93,7 @@ nav {
   right: 0;
   min-width: 50%;
   min-height: 40rem;
+  z-index: 2;
 }
 
 .nav-hidden {
@@ -271,5 +286,17 @@ a:hover {
     justify-content: end;
     padding-right: 2rem;
     padding-bottom: 0;
+  }
+  #icon-close {
+    display: none;
+  }
+  #main {
+    background-color: hsl(36, 100%, 99%);
+  }
+  #article {
+    filter: none;
+  }
+  body {
+    background-color: hsl(36, 100%, 99%);
   }
 }/*# sourceMappingURL=App.css.map */

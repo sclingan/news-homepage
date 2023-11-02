@@ -6,19 +6,31 @@ function Header() {
     function close() {
       let close = document.getElementById('icon-close');
       let nav = document.getElementById('nav');
+      let article = document.getElementById('article');
+      let main = document.getElementById('main');
+      let body = document.body;
       close?.classList.remove('icon-close');
       close?.classList.add('hidden');
       nav?.classList.remove('nav');
       nav?.classList.add('nav-hidden');
+      main?.classList.remove('main-dark');
+      article?.classList.remove('article-dark');
+      body.classList.remove('body-dark');
     }
 
     function open() {
       let close = document.getElementById('icon-close');
       let nav = document.getElementById('nav');
+      let article = document.getElementById('article');
+      let main = document.getElementById('main');
+      let body = document.body;
       close?.classList.remove('hidden');
       close?.classList.add('icon-close');
       nav?.classList.remove('nav-hidden');
       nav?.classList.add('nav');
+      article?.classList.add('article-dark');
+      main?.classList.add('main-dark');
+      body.classList.add('body-dark');
 
     }
     return (

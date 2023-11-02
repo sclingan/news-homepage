@@ -21,6 +21,7 @@ $font-family: 'Inter';
 
 /* TODO:
    add links to hover states
+   fix menu background
 */
 
 body {
@@ -29,6 +30,11 @@ body {
     font-size: $font-size;
     padding-block: 2rem;
     padding-inline: 1rem;
+    background-color: $neutral-white;
+}
+
+.body-dark {
+    background-color: hsl(0, 0%, 50%);
 }
 
 main {
@@ -40,8 +46,11 @@ main {
 }
 
 .main-dark {
-    // filter: brightness(30%); 
-    // background-color: grey;
+    background-color: hsl(0, 0%, 50%);
+}
+
+.article-dark {
+    filter: brightness(20%);
 }
 
 header {
@@ -57,6 +66,7 @@ nav {
     right: 0;
     min-width: 50%;
     min-height: 40rem;
+    z-index: 2;
 }
 
 .nav-hidden {
@@ -255,6 +265,25 @@ p {
         justify-content: end;
         padding-right: 2rem;
         padding-bottom: 0;
+    }
+
+    // when menu is still open going from mobile to desktop
+    // remove classes
+
+    #icon-close {
+        display: none;
+    }
+    
+    #main {
+        background-color: $neutral-white;
+    }
+    
+    #article {
+        filter: none;
+    }
+    
+    body {
+        background-color: $neutral-white;
     }
 
    
