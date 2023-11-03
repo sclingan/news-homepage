@@ -126,13 +126,13 @@ section {
 }
 
 .thumbnail {
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     padding-left: 0;
     padding-block: 1rem;
 }
 
 .gaming {
-    max-width: 110%;
+    max-width: 105%;
 }
 
 aside {
@@ -283,6 +283,10 @@ p {
     }
     
     body {
+        background-color: $neutral-white;
+    }
+
+    .body-dark {
         background-color: $neutral-white;
     }
 

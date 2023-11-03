@@ -153,13 +153,13 @@ section {
 }
 
 .thumbnail {
-  padding-inline: 1rem;
+  padding-inline: 2rem;
   padding-left: 0;
   padding-block: 1rem;
 }
 
 .gaming {
-  max-width: 110%;
+  max-width: 105%;
 }
 
 aside {
@@ -297,6 +297,9 @@ a:hover {
     filter: none;
   }
   body {
+    background-color: hsl(36, 100%, 99%);
+  }
+  .body-dark {
     background-color: hsl(36, 100%, 99%);
   }
 }/*# sourceMappingURL=App.css.map */

@@ -31,8 +31,8 @@ function Header() {
       article?.classList.add('article-dark');
       main?.classList.add('main-dark');
       body.classList.add('body-dark');
-
     }
+    
     return (
         <header>
             <img src={logo} alt="a W logo"></img>
